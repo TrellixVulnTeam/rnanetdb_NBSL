@@ -26,7 +26,7 @@ export default function About() {
                 >
                     About RNANet
                 </Typography>
-                <Typography variant="h5" align="center" color="text.secondary" paragraph>
+                <Typography variant="h6" align="center" color="text.secondary" paragraph>
                     A major part of any data-science work consists in finding appropriate data which contains enough signal to tackle the problem we are interested in. Then, cleaning the data to ensure uniformity of the measures, compatibility of the various data sources and protocols, and a reasonable amount of noise is sometimes the most time-consuming step.
 
                     Here we propose a first attempt of standardized and automatically generated dataset dedicated to non-coding RNA combining together:
@@ -43,8 +43,15 @@ export default function About() {
                     spacing={2}
                     justifyContent="center"
                 >
-                    <Button variant="contained">Main call to action</Button>
-                    <Button variant="outlined">Secondary action</Button>
+                    <Button variant="contained" disableElevation>
+                        <a 
+                            href="https://forge.ibisc.univ-evry.fr/lbecquey/RNANet" 
+                            target={"_blank"}
+                            style={{ textDecoration: 'none', color: 'inherit', textTransform: 'none' }}
+                        >
+                            Read more
+                        </a>
+                    </Button>
                 </Stack>
             </Container>
         </Box>
