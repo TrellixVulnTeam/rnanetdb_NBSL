@@ -34,7 +34,7 @@ export default function UpdatedForm() {
 
   const [resolution, setResolution] = useState({ min: 1, max: 20 });
   const [sequenceLength, setSequenceLength] = useState({ min: 1, max: 4 });
-  const [organism, setOrganism] = useState('organism1');
+  const [organism, setOrganism] = useState();
   const [method, setMethod] = useState();
   const [releaseDate, setReleaseDate] = useState({
     min: formtDate(new Date('1900-01-01')),
@@ -180,6 +180,9 @@ export default function UpdatedForm() {
               native: true,
             }}
           >
+            <option value={undefined} >
+              Select an organism
+            </option>
             {organisms.map((organism) => (
               <option key={organism} value={organism}>
                 {organism}

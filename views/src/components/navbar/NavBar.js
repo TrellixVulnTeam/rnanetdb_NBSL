@@ -15,16 +15,14 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className='nav' style={{ overflowX: "scroll"}}>
+        <nav className='nav' style={{ overflowX: "scroll" }}>
             <Grid container spacing={2} flexWrap="nowrap">
                 {navLinks.map(link => (
                     <Grid item>
                         {link.isExternal ? (
-                            <Link href={link.url} target="_blank" rel="noopener noreferrer">
-                                <Typography variant="h6" style={navLinkStyles(link)}>
-                                    {link.name}
-                                </Typography>
-                            </Link>
+                            <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                {link.name}
+                            </a>
                         ) : (
                             <NavLink
                                 key={link.name}
@@ -33,13 +31,23 @@ export const Navbar = () => {
                                 className='nav-link'
                                 color='GrayText'
                             >
-                                {link.name} 
+                                {link.name}
                             </NavLink>
                         )}
                     </Grid>
                 ))}
+                <Grid item>
+                    <a 
+                        href={"https://evryrna.ibisc.univ-evry.fr/evryrna/rnanet"} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{ color:"GrayText", textDecoration:"none", fontSize: "1.3rem" }}
+                    >
+                            RNAEvry
+                        </a>
+                </Grid>
             </Grid>
-            
+
         </nav>
     )
 }

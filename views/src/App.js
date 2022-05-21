@@ -17,6 +17,8 @@ import Divider from '@mui/material/Divider';
 import { List } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { mainListItems, secondaryListItems } from './components/common';
+import About from './pages/About';
+import Download from './pages/Download';
 
 const drawerWidth = 240;
 
@@ -131,6 +133,8 @@ function DashboardContent() {
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path='about' element={<About />} />
+              <Route path='download' element={<Download />} />
               <Route path="datatable" element={<Table />} />
             </Routes>
           </Container>

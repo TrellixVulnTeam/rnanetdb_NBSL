@@ -50,7 +50,7 @@ export default function TabsList() {
           justifyContent="space-between"
           alignItems="center"
           spacing={3}
-          sx={{ width: '100%' }}
+          sx={{ width: '100%', "&>*": { marginLeft: 0.1} }}
           flexWrap="wrap"
         >
           <Grid item xs={4}>

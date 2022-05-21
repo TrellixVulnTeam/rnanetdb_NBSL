@@ -34,12 +34,5 @@ export const navLinks = [
     link: '/contact',
     icon: 'contact',
     isExternal: false,
-  },
-
-  {
-    name: 'EvryRNA',
-    link: '/evryrna',
-    icon: 'evryrna',
-    isExternal: false,
-  },
+  }
 ];
