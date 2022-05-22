@@ -1,7 +1,7 @@
-## Prerequisite
-### Download RNAnetdb sqlite3 database
+# Prerequisites
+## Download RNAnetdb sqlite3 database
 To use this app, you need to download RNAnetdb sqlite3 database by clicking [here](https://entrepot.ibisc.univ-evry.fr/f/affcebef9e504a65a771/?dl=1).
-### Clone the projet
+## Clone the projet
 ```git clone https://github.com/mamadou-niakate/rnanetdb.git```
 ## Install dependencies
 type ```npm install``` from your terminal
@@ -14,6 +14,7 @@ type ```npm install``` from your terminal
 ### Run client
 ```cd views``` then ```npm start```
 
+# How to use the app
 ## Select criteria
 ![alt text](views/public/images/form.png)
 ## Visualize structures in table
