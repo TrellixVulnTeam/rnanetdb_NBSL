@@ -1,6 +1,6 @@
 const sqlite = require('sqlite3').verbose();
 
-const db = new sqlite.Database('C:\\Users\\mamad\\Downloads\\RNANet.db', (err) => {
+const db = new sqlite.Database(process.env.DATABASE_PATH, (err) => {
   if (err) {
     console.error(err.message);
   }
